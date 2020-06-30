@@ -233,8 +233,8 @@ strstr (const char *haystack, const char *needle)
 */
 char *
 strtok_r (char *s, const char *delimiters, char **save_ptr) 
-{  
-char *token;
+{
+  char *token;
   
   ASSERT (delimiters != NULL);
   ASSERT (save_ptr != NULL);
@@ -270,8 +270,8 @@ char *token;
       *save_ptr = s + 1;
     }
   else 
-    *save_ptr = s; 
- return token;
+    *save_ptr = s;
+  return token;
 }
 
 /* Sets the SIZE bytes in DST to VALUE. */
@@ -372,6 +372,4 @@ strlcat (char *dst, const char *src, size_t size)
     }
   return src_len + dst_len;
 }
-
-
 
